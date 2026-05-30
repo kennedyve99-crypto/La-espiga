@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Espiga</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color:#f3ede5;
+            color:#4b2e1f;
+        }
+
+      
+        header{
+            background-color:#c58a5a;
+            padding:25px 0;
+            text-align:center;
+            color:white;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1{
+            font-size:45px;
+            margin-bottom:5px;
+        }
+
+        header p{
+            font-size:16px;
+            letter-spacing:2px;
+        }
+
+      
+        nav{
+            background-color:#9b623d;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 20px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#f7d9b8;
+        }
+
+       
+        .contenedor{
+            width:90%;
+            max-width:1200px;
+            margin:40px auto;
+        }
+
+        .producto{
+            display:flex;
+            align-items:center;
+            gap:30px;
+            background:white;
+            margin-bottom:40px;
+            padding:25px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .producto:hover{
+            transform:translateY(-5px);
+        }
+
+        .producto img{
+            width:300px;
+            height:220px;
+            object-fit:cover;
+            border-radius:15px;
+        }
+
+        .texto h2{
+            font-size:32px;
+            margin-bottom:15px;
+            color:#9b623d;
+        }
+
+        .texto p{
+            line-height:1.8;
+            font-size:17px;
+            margin-bottom:15px;
+        }
+
+        .precio{
+            font-size:22px;
+            font-weight:bold;
+            color:#c58a5a;
+        }
+
+       
+        footer{
+            background-color:#9b623d;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+
+        
+        @media(max-width:768px){
+
+            .producto{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .producto img{
+                width:100%;
+                height:auto;
+            }
+
+            header h1{
+                font-size:35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>La Espiga</h1>
+        <p>Panadería Artesanal</p>
+    </header>
+
+    <nav>
+        <a href="/La espiga/inicio.html">Inicio</a>
+        <a href="/La espiga/galeria.html">Galería</a>
+        <a href="/La espiga/contacto.html">Contacto</a>
+    </nav>
+
+    <div class="contenedor">
+
+        
+        <div class="producto">
+
+            <img src="/html/multimedia2/porcion mag.jpeg" alt="Pastel">
+
+            <div class="texto">
+                <h2>Pastel Artesanal</h2>
+
+                <p>
+                    Déjate conquistar por la suavidad y el delicioso sabor de nuestros
+                    pasteles artesanales. Preparados con ingredientes frescos y decorados
+                    cuidadosamente, cada creación combina textura, aroma y un toque dulce
+                    irresistible que convierte cualquier momento en algo especial.
+                </p>
+
+                <div class="precio">Q. 10 la porcion</div>
+            </div>
+
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="producto">
+
+            <img src="/html/multimedia2/cupcake.jpeg" alt="Cupcakes">
+
+            <div class="texto">
+                <h2>Cupcakes Caseros</h2>
+
+                <p>
+                    Nuestros cupcakes están elaborados para llenar de dulzura cada ocasión.
+                    Con suaves bizcochos, cremosos rellenos y una presentación encantadora,
+                    son perfectos para compartir con amigos, familia o simplemente darte un gusto.
+                </p>
+
+                <div class="precio">Q. 5 c/u</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 La Espiga | Panadería Artesanal
+    </footer>
+
+</body>
+</html>
